@@ -59,7 +59,6 @@
 
 - (IBAction)simSwipeduDynamoSwitchFlipped:(id)sender {
     [self.simSwipeiDynamoSwitch setOn:false animated:true];
-    [self.simSwipeuDynamoSwitch setOn:false animated:true];
     
     [self magTek_deactivate];
     
@@ -81,7 +80,6 @@
 
 - (IBAction)simSwipeiDynamoSwitchFlipped:(id)sender {
     [self.simSwipeuDynamoSwitch setOn:false animated:true];
-    [self.simSwipeiDynamoSwitch setOn:false animated:true];
     
     [self magTek_deactivate];
     

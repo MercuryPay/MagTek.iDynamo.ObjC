@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "HCMercuryHelper.h"
 #import "AppDelegate.h"
 
 @interface ReceiptViewController : UIViewController

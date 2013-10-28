@@ -22,7 +22,6 @@
 		C2EC5DAC180C415300883E97 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C2EC5DAB180C415300883E97 /* Default.png */; };
 		C2EC5DAE180C415300883E97 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2EC5DAD180C415300883E97 /* Default@2x.png */; };
 		C2EC5DB0180C415300883E97 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2EC5DAF180C415300883E97 /* Default-568h@2x.png */; };
-		C2EC5DBA180C418000883E97 /* HCMercuryHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EC5DB7180C418000883E97 /* HCMercuryHelper.m */; };
 		C2EC5DBB180C418000883E97 /* MercuryHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EC5DB9180C418000883E97 /* MercuryHelper.m */; };
 		C2EC5DBE180C41B800883E97 /* EncryptedSwipeData.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EC5DBD180C41B800883E97 /* EncryptedSwipeData.m */; };
 		C2EC5DC7180C485300883E97 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2EC5DC6180C485300883E97 /* MediaPlayer.framework */; };
@@ -98,8 +97,6 @@
 		C2EC5DAB180C415300883E97 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		C2EC5DAD180C415300883E97 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		C2EC5DAF180C415300883E97 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		C2EC5DB6180C418000883E97 /* HCMercuryHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCMercuryHelper.h; sourceTree = "<group>"; };
-		C2EC5DB7180C418000883E97 /* HCMercuryHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCMercuryHelper.m; sourceTree = "<group>"; };
 		C2EC5DB8180C418000883E97 /* MercuryHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MercuryHelper.h; sourceTree = "<group>"; };
 		C2EC5DB9180C418000883E97 /* MercuryHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MercuryHelper.m; sourceTree = "<group>"; };
 		C2EC5DBC180C41B800883E97 /* EncryptedSwipeData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EncryptedSwipeData.h; sourceTree = "<group>"; };
@@ -246,8 +243,6 @@
 				C2EC5DA9180C415300883E97 /* AppDelegate.m */,
 				C2EC5DBC180C41B800883E97 /* EncryptedSwipeData.h */,
 				C2EC5DBD180C41B800883E97 /* EncryptedSwipeData.m */,
-				C2EC5DB6180C418000883E97 /* HCMercuryHelper.h */,
-				C2EC5DB7180C418000883E97 /* HCMercuryHelper.m */,
 				C2EC5DB8180C418000883E97 /* MercuryHelper.h */,
 				C2EC5DB9180C418000883E97 /* MercuryHelper.m */,
 				C2269E4D180EF14E00A5ECE5 /* SwipeViewController.h */,
@@ -428,7 +423,6 @@
 			files = (
 				C2EC5DA6180C415300883E97 /* main.m in Sources */,
 				C2EC5DAA180C415300883E97 /* AppDelegate.m in Sources */,
-				C2EC5DBA180C418000883E97 /* HCMercuryHelper.m in Sources */,
 				C2EC5DBB180C418000883E97 /* MercuryHelper.m in Sources */,
 				C2EC5DBE180C41B800883E97 /* EncryptedSwipeData.m in Sources */,
 				C2269E56180EF15D00A5ECE5 /* ReceiptViewController.m in Sources */,
