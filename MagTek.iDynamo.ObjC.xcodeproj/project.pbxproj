@@ -13,6 +13,7 @@
 		C2269E58180EF15D00A5ECE5 /* SwipeInitResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2269E53180EF15D00A5ECE5 /* SwipeInitResultsViewController.m */; };
 		C2269E59180EF15D00A5ECE5 /* SwipeVerifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2269E55180EF15D00A5ECE5 /* SwipeVerifyViewController.m */; };
 		C2269E5B180EF16C00A5ECE5 /* SwipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2269E5A180EF16C00A5ECE5 /* SwipeViewController.m */; };
+		C2B73AE5181EAF4F002A3DDD /* iPadApp.png in Resources */ = {isa = PBXBuildFile; fileRef = C2B73AE4181EAF4F002A3DDD /* iPadApp.png */; };
 		C2EC5D9A180C415300883E97 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2EC5D99180C415300883E97 /* UIKit.framework */; };
 		C2EC5D9C180C415300883E97 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2EC5D9B180C415300883E97 /* Foundation.framework */; };
 		C2EC5D9E180C415300883E97 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2EC5D9D180C415300883E97 /* CoreGraphics.framework */; };
@@ -84,6 +85,7 @@
 		C2269E54180EF15D00A5ECE5 /* SwipeVerifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SwipeVerifyViewController.h; path = MagTek.iDynamo.ObjC/Classes/SwipeVerifyViewController.h; sourceTree = SOURCE_ROOT; };
 		C2269E55180EF15D00A5ECE5 /* SwipeVerifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SwipeVerifyViewController.m; path = MagTek.iDynamo.ObjC/Classes/SwipeVerifyViewController.m; sourceTree = SOURCE_ROOT; };
 		C2269E5A180EF16C00A5ECE5 /* SwipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SwipeViewController.m; path = MagTek.iDynamo.ObjC/Classes/SwipeViewController.m; sourceTree = SOURCE_ROOT; };
+		C2B73AE4181EAF4F002A3DDD /* iPadApp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPadApp.png; sourceTree = "<group>"; };
 		C2EC5D96180C415300883E97 /* MagTek.iDynamo.ObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagTek.iDynamo.ObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2EC5D99180C415300883E97 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C2EC5D9B180C415300883E97 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -174,6 +176,7 @@
 		C2EC5D8D180C415200883E97 = {
 			isa = PBXGroup;
 			children = (
+				C2B73AE4181EAF4F002A3DDD /* iPadApp.png */,
 				C2EC5D9F180C415300883E97 /* MagTek.iDynamo.ObjC */,
 				C2EC5D98180C415300883E97 /* Frameworks */,
 				C2EC5D97180C415300883E97 /* Products */,
@@ -412,6 +415,7 @@
 				C2F0D25A180EEE9400F7AF44 /* uDynamoButtonDown.png in Resources */,
 				C2F0D25B180EEE9400F7AF44 /* uDynamoIcon.png in Resources */,
 				C2F0D25C180EEE9400F7AF44 /* uDynamoIconDown.png in Resources */,
+				C2B73AE5181EAF4F002A3DDD /* iPadApp.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
