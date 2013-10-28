@@ -13,9 +13,6 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="euA-u5-nZ9">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="fZv-Ht-kMR"/>
-                                </constraints>
                                 <attributedString key="attributedText">
                                     <fragment content="integrationTeam@mercurypay.com">
                                         <attributes>
@@ -40,7 +37,7 @@
                                     <constraint firstAttribute="height" constant="85" id="ttT-iG-5IH"/>
                                 </constraints>
                                 <attributedString key="attributedText">
-                                    <fragment content="Connect to the encrypted swiper you choose">
+                                    <fragment content="Choose an encrypted swiper">
                                         <attributes>
                                             <color key="NSColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="17" name="Helvetica-Bold"/>
@@ -55,7 +52,7 @@
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <string key="content">The uDynamo, iDynamo or Shuttle are just a couple of the mobile encrypted swipers that we support and we are always expanding our inventory.</string>
+                                        <string key="content">The Magtek uDynamo and Magtek iDynamo are just two of the mobile encrypted swipers that Mercury supports and we are always expanding our device inventory.</string>
                                         <attributes>
                                             <color key="NSColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="17" name="Helvetica-Light"/>
@@ -72,7 +69,7 @@
                                     <constraint firstAttribute="height" constant="85" id="zUa-Xb-2V1"/>
                                 </constraints>
                                 <attributedString key="attributedText">
-                                    <fragment content="Let us help with your device integration">
+                                    <fragment content="Mercury will help with your device integration">
                                         <attributes>
                                             <color key="NSColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="17" name="Helvetica-Bold"/>
@@ -102,16 +99,17 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="euA-u5-nZ9" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="4Ha-FC-bDR"/>
-                            <constraint firstItem="xc2-ni-DWc" firstAttribute="top" secondItem="nJ1-mt-hdU" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="An4-CG-JNl"/>
                             <constraint firstItem="euA-u5-nZ9" firstAttribute="leading" secondItem="QDA-in-GdZ" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Jzh-yb-JEO"/>
-                            <constraint firstItem="Wh2-fK-P09" firstAttribute="top" secondItem="xc2-ni-DWc" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="KgS-G8-jG3"/>
                             <constraint firstItem="euA-u5-nZ9" firstAttribute="top" secondItem="Wh2-fK-P09" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Lr1-yH-fEM"/>
                             <constraint firstAttribute="trailing" secondItem="xc2-ni-DWc" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Od0-2D-99b"/>
                             <constraint firstItem="Wh2-fK-P09" firstAttribute="centerX" secondItem="euA-u5-nZ9" secondAttribute="centerX" type="default" id="SZ3-u2-xs1"/>
                             <constraint firstAttribute="bottom" secondItem="euA-u5-nZ9" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="YgU-Ni-1n6"/>
                             <constraint firstItem="xc2-ni-DWc" firstAttribute="leading" secondItem="QDA-in-GdZ" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="ZWY-wB-3Bu"/>
-                            <constraint firstAttribute="trailing" secondItem="nJ1-mt-hdU" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="ras-Gq-6h3"/>
+                            <constraint firstAttribute="bottom" secondItem="nJ1-mt-hdU" secondAttribute="bottom" constant="215" id="qMo-rg-Vsd"/>
                             <constraint firstItem="nJ1-mt-hdU" firstAttribute="leading" secondItem="QDA-in-GdZ" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="t6V-XX-gyU"/>
+                            <constraint firstAttribute="bottom" secondItem="Wh2-fK-P09" secondAttribute="bottom" constant="58" id="vv8-ns-q67"/>
+                            <constraint firstAttribute="bottom" secondItem="xc2-ni-DWc" secondAttribute="bottom" constant="137" id="yzB-4c-VaC"/>
+                            <constraint firstAttribute="trailing" secondItem="nJ1-mt-hdU" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="zDg-Gr-9oe"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -201,42 +199,34 @@
                                 </constraints>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="swipe4mo-blue.png" translatesAutoresizingMaskIntoConstraints="NO" id="D5V-TF-UMM"/>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="magtekLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="vBr-cQ-huQ">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="129" id="Fxa-Qa-p73"/>
-                                    <constraint firstAttribute="height" constant="25" id="g2z-M1-1Ay"/>
-                                </constraints>
-                            </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="magtekLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="URw-WQ-d5R"/>
                         </subviews>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="YKc-bE-uD8" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="0Uk-CI-N2n"/>
-                            <constraint firstItem="URw-WQ-d5R" firstAttribute="centerX" secondItem="Ltk-Rw-QO1" secondAttribute="centerX" type="default" id="68T-lb-IGr"/>
+                            <constraint firstItem="Ltk-Rw-QO1" firstAttribute="centerX" secondItem="mXR-E7-Qvc" secondAttribute="centerX" type="default" id="3fM-KT-Qk0"/>
                             <constraint firstAttribute="bottom" secondItem="D5V-TF-UMM" secondAttribute="bottom" constant="56" id="6vP-LL-PS4"/>
-                            <constraint firstItem="2J3-td-B5T" firstAttribute="top" secondItem="mXR-E7-Qvc" secondAttribute="top" constant="344" id="A4e-ki-G27"/>
-                            <constraint firstItem="Ltk-Rw-QO1" firstAttribute="centerX" secondItem="vBr-cQ-huQ" secondAttribute="centerX" type="default" id="BY4-au-yva"/>
+                            <constraint firstItem="1Qm-dh-g7J" firstAttribute="top" secondItem="mXR-E7-Qvc" secondAttribute="top" constant="302" id="Cxy-Tc-4Ib"/>
                             <constraint firstItem="WX5-6U-Ism" firstAttribute="top" secondItem="BbU-hp-gVP" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="EvS-cl-A4w"/>
                             <constraint firstItem="DhK-q4-13W" firstAttribute="centerX" secondItem="BbU-hp-gVP" secondAttribute="centerX" type="default" id="F6o-Eb-xPP"/>
+                            <constraint firstItem="URw-WQ-d5R" firstAttribute="centerX" secondItem="Ltk-Rw-QO1" secondAttribute="centerX" type="default" id="JdT-Yh-1ED"/>
                             <constraint firstItem="p0Y-DS-dBd" firstAttribute="trailing" secondItem="mXR-E7-Qvc" secondAttribute="trailing" type="default" id="LUJ-lV-wcA"/>
-                            <constraint firstItem="URw-WQ-d5R" firstAttribute="centerX" secondItem="mXR-E7-Qvc" secondAttribute="centerX" type="default" id="MaU-Ik-7CL"/>
                             <constraint firstItem="p0Y-DS-dBd" firstAttribute="leading" secondItem="D5V-TF-UMM" secondAttribute="leading" type="default" id="McF-hJ-6qi"/>
                             <constraint firstItem="p0Y-DS-dBd" firstAttribute="bottom" secondItem="mXR-E7-Qvc" secondAttribute="bottom" type="default" id="QZ7-6c-Gbd"/>
+                            <constraint firstItem="Ltk-Rw-QO1" firstAttribute="centerX" secondItem="YKc-bE-uD8" secondAttribute="centerX" type="default" id="RfQ-1Q-MyM"/>
                             <constraint firstItem="WX5-6U-Ism" firstAttribute="top" secondItem="NG7-qh-kJn" secondAttribute="top" type="default" id="S25-Jd-Q6g"/>
                             <constraint firstItem="2J3-td-B5T" firstAttribute="centerX" secondItem="NG7-qh-kJn" secondAttribute="centerX" type="default" id="U0S-yD-kfU"/>
+                            <constraint firstItem="2J3-td-B5T" firstAttribute="top" secondItem="mXR-E7-Qvc" secondAttribute="top" constant="452" id="Va6-zP-df9"/>
                             <constraint firstItem="1Qm-dh-g7J" firstAttribute="leading" secondItem="mXR-E7-Qvc" secondAttribute="leading" constant="202" id="Xmz-uV-RRn"/>
                             <constraint firstItem="NG7-qh-kJn" firstAttribute="top" secondItem="2J3-td-B5T" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Yh0-8N-vjn"/>
                             <constraint firstItem="WX5-6U-Ism" firstAttribute="centerX" secondItem="BbU-hp-gVP" secondAttribute="centerX" type="default" id="Z95-Tp-MaI"/>
                             <constraint firstItem="2J3-td-B5T" firstAttribute="centerX" secondItem="1Qm-dh-g7J" secondAttribute="centerX" type="default" id="cOO-Cy-rIB"/>
                             <constraint firstItem="1Qm-dh-g7J" firstAttribute="top" secondItem="DhK-q4-13W" secondAttribute="top" type="default" id="dvX-wO-uSq"/>
-                            <constraint firstItem="URw-WQ-d5R" firstAttribute="centerX" secondItem="YKc-bE-uD8" secondAttribute="centerX" type="default" id="eEb-UJ-96Z"/>
-                            <constraint firstAttribute="bottom" secondItem="URw-WQ-d5R" secondAttribute="bottom" constant="291" id="fPK-kD-aPi"/>
-                            <constraint firstItem="vBr-cQ-huQ" firstAttribute="top" secondItem="mXR-E7-Qvc" secondAttribute="top" constant="307" id="hOh-5k-05j"/>
+                            <constraint firstItem="URw-WQ-d5R" firstAttribute="top" secondItem="mXR-E7-Qvc" secondAttribute="top" constant="138" id="lYT-6s-zne"/>
                             <constraint firstItem="WX5-6U-Ism" firstAttribute="baseline" secondItem="NG7-qh-kJn" secondAttribute="baseline" type="default" id="mSL-jQ-dGN"/>
-                            <constraint firstItem="1Qm-dh-g7J" firstAttribute="top" secondItem="mXR-E7-Qvc" secondAttribute="top" constant="194" id="qvF-Qz-yyB"/>
+                            <constraint firstAttribute="bottom" secondItem="Ltk-Rw-QO1" secondAttribute="bottom" constant="240" id="mTC-vY-gda"/>
                             <constraint firstAttribute="trailing" secondItem="WX5-6U-Ism" secondAttribute="trailing" constant="201" id="wOf-Ri-zmX"/>
-                            <constraint firstItem="Ltk-Rw-QO1" firstAttribute="top" secondItem="mXR-E7-Qvc" secondAttribute="top" constant="469" id="yOR-ed-IBI"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="5EA-uu-pvS" appends="YES" id="5kv-gb-Nee"/>
@@ -249,21 +239,18 @@
                         <outlet property="simSwipeiDynamoButton" destination="DhK-q4-13W" id="0yG-8E-d31"/>
                         <outlet property="simSwipeiDynamoSwitch" destination="BbU-hp-gVP" id="q93-Un-5CD"/>
                         <outlet property="simSwipeuDynamoSwitch" destination="2J3-td-B5T" id="TY7-Be-fY3"/>
+                        <segue destination="I3R-Au-idw" kind="modal" identifier="segueSwipeResults" modalTransitionStyle="crossDissolve" id="4ra-IS-Vhl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SFn-kd-fZt" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="left" id="qyh-U8-0cc">
-                    <connections>
-                        <segue destination="I3R-Au-idw" kind="modal" identifier="segueSwipeResults" modalTransitionStyle="crossDissolve" id="4qT-Li-zdJ"/>
-                    </connections>
-                </swipeGestureRecognizer>
                 <swipeGestureRecognizer direction="up" id="5EA-uu-pvS">
                     <connections>
                         <segue destination="3T3-US-CPH" kind="modal" modalTransitionStyle="partialCurl" id="108-ba-fD7"/>
                     </connections>
                 </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="qyh-U8-0cc"/>
             </objects>
-            <point key="canvasLocation" x="-5157" y="-4650"/>
+            <point key="canvasLocation" x="-5149" y="-4642"/>
         </scene>
         <!--Swipe Init Results View Controller-->
         <scene sceneID="O3T-yr-SRB">
@@ -273,15 +260,16 @@
                         <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Masked Track 2 Data" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Cn-Xm-oih" userLabel="MaskedTrack2DataLabel">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Masked Track 2 Data:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Cn-Xm-oih" userLabel="MaskedTrack2DataLabel">
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="251" id="KVw-y9-TOS"/>
                                     <constraint firstAttribute="height" constant="30" id="Ozt-QH-AC3"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="19"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Encrypted Track 2 Data" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Daw-Vl-41O" userLabel="EncryptedTrack2DataLabel">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Encrypted Track 2 Data:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Daw-Vl-41O" userLabel="EncryptedTrack2DataLabel">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="VWn-Rp-xhG"/>
                                 </constraints>
@@ -289,10 +277,9 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="KSN" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nHf-Qd-Qx2" userLabel="KSNLabel">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="KSN:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nHf-Qd-Qx2" userLabel="KSNLabel">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="3OK-Cb-Df2"/>
-                                    <constraint firstAttribute="width" constant="190" id="eon-Sm-nYX"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="19"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -301,7 +288,7 @@
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R7T-0F-rYp" userLabel="MaskedTrack2DataResult">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="BNl-5p-T29"/>
-                                    <constraint firstAttribute="width" constant="399" id="Hpy-7C-Kns"/>
+                                    <constraint firstAttribute="width" constant="463" id="JOh-9w-X8I"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="19"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -380,29 +367,30 @@
                         <color key="backgroundColor" red="0.0" green="0.64313725489999995" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="3NG-9p-rge" firstAttribute="leading" secondItem="FkC-D1-Rux" secondAttribute="leading" constant="-25" id="0sp-on-z4d"/>
-                            <constraint firstItem="5Cn-Xm-oih" firstAttribute="leading" secondItem="Daw-Vl-41O" secondAttribute="leading" type="default" id="8rl-ew-c0c"/>
-                            <constraint firstItem="R7T-0F-rYp" firstAttribute="leading" secondItem="FkC-D1-Rux" secondAttribute="leading" constant="300" id="AO3-d6-Mzg"/>
+                            <constraint firstItem="Daw-Vl-41O" firstAttribute="leading" secondItem="FkC-D1-Rux" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="5ga-of-LZ7"/>
+                            <constraint firstItem="5Cn-Xm-oih" firstAttribute="leading" secondItem="FkC-D1-Rux" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="7Db-iy-yQX"/>
                             <constraint firstItem="R7T-0F-rYp" firstAttribute="top" secondItem="FkC-D1-Rux" secondAttribute="top" constant="117" id="B5w-Ig-SNj"/>
                             <constraint firstItem="3NG-9p-rge" firstAttribute="bottom" secondItem="EiS-mO-wqC" secondAttribute="bottom" type="default" id="InW-GY-bIK"/>
                             <constraint firstItem="5Cn-Xm-oih" firstAttribute="top" secondItem="FkC-D1-Rux" secondAttribute="top" constant="113" id="K1l-TX-OgH"/>
                             <constraint firstItem="Uds-UA-AMT" firstAttribute="leading" secondItem="qJ4-EC-BdG" secondAttribute="leading" type="default" id="KBU-OI-eJd"/>
-                            <constraint firstItem="5Cn-Xm-oih" firstAttribute="leading" secondItem="FkC-D1-Rux" secondAttribute="leading" constant="69" id="M4d-aD-Gre"/>
                             <constraint firstItem="nHf-Qd-Qx2" firstAttribute="top" secondItem="FkC-D1-Rux" secondAttribute="top" constant="179" id="M8e-z0-gG0"/>
                             <constraint firstItem="EiS-mO-wqC" firstAttribute="top" secondItem="3NG-9p-rge" secondAttribute="top" type="default" id="OcP-h2-bh5"/>
-                            <constraint firstItem="R7T-0F-rYp" firstAttribute="trailing" secondItem="qJ4-EC-BdG" secondAttribute="trailing" type="default" id="US1-NL-SVy"/>
+                            <constraint firstAttribute="trailing" secondItem="Uds-UA-AMT" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Z1y-LK-bil"/>
+                            <constraint firstItem="nHf-Qd-Qx2" firstAttribute="leading" secondItem="FkC-D1-Rux" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="a2u-o8-jxY"/>
                             <constraint firstItem="EiS-mO-wqC" firstAttribute="leading" secondItem="FkC-D1-Rux" secondAttribute="leading" constant="479" id="aCG-Bj-SHU"/>
                             <constraint firstItem="nHf-Qd-Qx2" firstAttribute="trailing" secondItem="Daw-Vl-41O" secondAttribute="trailing" type="default" id="b7N-X2-Wm8"/>
                             <constraint firstItem="qJ4-EC-BdG" firstAttribute="top" secondItem="FkC-D1-Rux" secondAttribute="top" constant="150" id="bT3-BJ-Ekg"/>
                             <constraint firstItem="ZQv-C2-nr3" firstAttribute="centerX" secondItem="FkC-D1-Rux" secondAttribute="centerX" type="default" id="baD-ho-woE"/>
                             <constraint firstItem="3NG-9p-rge" firstAttribute="top" secondItem="FkC-D1-Rux" secondAttribute="top" constant="788" id="cMe-ec-gqt"/>
-                            <constraint firstItem="Uds-UA-AMT" firstAttribute="trailing" secondItem="qJ4-EC-BdG" secondAttribute="trailing" type="default" id="eFJ-bo-5IU"/>
                             <constraint firstItem="Daw-Vl-41O" firstAttribute="top" secondItem="FkC-D1-Rux" secondAttribute="top" constant="146" id="egV-Rp-Zx8"/>
                             <constraint firstItem="Uds-UA-AMT" firstAttribute="top" secondItem="FkC-D1-Rux" secondAttribute="top" constant="183" id="fRB-rp-1dS"/>
                             <constraint firstAttribute="bottom" secondItem="ZQv-C2-nr3" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="h5Q-Hm-43X"/>
                             <constraint firstItem="F9c-4H-sbA" firstAttribute="top" secondItem="FkC-D1-Rux" secondAttribute="top" constant="800" id="n74-TA-8eQ"/>
                             <constraint firstItem="Daw-Vl-41O" firstAttribute="trailing" secondItem="5Cn-Xm-oih" secondAttribute="trailing" type="default" id="nwI-K0-jKu"/>
+                            <constraint firstAttribute="trailing" secondItem="R7T-0F-rYp" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="o6f-Qt-Sym"/>
                             <constraint firstItem="qJ4-EC-BdG" firstAttribute="leading" secondItem="R7T-0F-rYp" secondAttribute="leading" type="default" id="sHZ-mH-jwn"/>
                             <constraint firstItem="F9c-4H-sbA" firstAttribute="leading" secondItem="FkC-D1-Rux" secondAttribute="leading" constant="-13" id="zCg-hA-gHs"/>
+                            <constraint firstAttribute="trailing" secondItem="qJ4-EC-BdG" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="zjd-ea-EVq"/>
                         </constraints>
                     </view>
                     <connections>
@@ -1104,13 +1092,94 @@
         <image name="uDynamoIcon.png" width="601" height="476"/>
         <image name="uDynamoIconDown.png" width="610" height="492"/>
     </resources>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ReceiptViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ReceiptViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="acqRefDataValue" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="amountValue" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="authAmountValue" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="authCodeValue" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="cardTypeValue" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="cvvResultValue" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="displayMessageValue" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="expDateValue" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="invoiceValue" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="maskedAccountValue" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="refNoValue" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="responseCodeValue" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="statusMessageValue" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="statusValue" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="taxAmtValue" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="tokenValue" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="tranTypeValue" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="transPostTimeValue" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="transctionIDValue" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="SixthViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SixthViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="acqRefDataValue" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="amountValue" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="authAmountValue" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="authCodeValue" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="cardTypeValue" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="cvvResultValue" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="displayMessageValue" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="expDateValue" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="invoiceValue" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="maskedAccountValue" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="refNoValue" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="responseCodeValue" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="statusMessageValue" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="statusValue" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="taxAmtValue" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="tokenValue" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="tranTypeValue" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="transPostTimeValue" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="SwipeInitResultsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SwipeInitResultsViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="encryptedTrack2DataResult" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="ksnResult" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="maskedTrack2DataResult" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="SwipeVerifyViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SwipeVerifyViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="swipeStep2:"/>
+            </relationships>
+        </class>
+        <class className="SwipeViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SwipeViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="simSwipeduDynamoSwitchFlipped:"/>
+                <relationship kind="action" name="simSwipeiDynamoButtonPressed:"/>
+                <relationship kind="action" name="simSwipeiDynamoSwitchFlipped:"/>
+                <relationship kind="action" name="simSwipeuDynamoButtonPressed:"/>
+                <relationship kind="outlet" name="ccSwipe" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="imageCardState" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="simSwipeUdynamoButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="simSwipeiDynamoButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="simSwipeiDynamoSwitch" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="simSwipeuDynamoSwitch" candidateClass="UISwitch"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="qgT-79-eVa"/>
         <segue reference="NZx-5l-S0v"/>
+        <segue reference="zee-lE-lK0"/>
     </inferredMetricsTieBreakers>
 </document>

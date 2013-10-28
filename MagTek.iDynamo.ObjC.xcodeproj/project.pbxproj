@@ -176,7 +176,6 @@
 		C2EC5D8D180C415200883E97 = {
 			isa = PBXGroup;
 			children = (
-				C2B73AE4181EAF4F002A3DDD /* iPadApp.png */,
 				C2EC5D9F180C415300883E97 /* MagTek.iDynamo.ObjC */,
 				C2EC5D98180C415300883E97 /* Frameworks */,
 				C2EC5D97180C415300883E97 /* Products */,
@@ -276,6 +275,7 @@
 		C2F0D1C2180EEE9300F7AF44 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				C2B73AE4181EAF4F002A3DDD /* iPadApp.png */,
 				C2F0D1C4180EEE9300F7AF44 /* button_step1.png */,
 				C2F0D1C5180EEE9300F7AF44 /* button_step2.png */,
 				C2F0D1C6180EEE9300F7AF44 /* button_step3.png */,
