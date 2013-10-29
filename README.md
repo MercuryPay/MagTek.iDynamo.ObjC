@@ -2,7 +2,7 @@ MagTek.iDynamo.ObjC
 ===================
 XCode iOS application capturing encrypted credit card swipe from MagTek peripheral and processing transactions to our web services platform.
 
-Steps to capture encrypted card data from MagTek encrypted mobile swipers
+#Steps to capture encrypted card data from MagTek encrypted mobile swipers
 
 ##Step 1: Add MagTek library
 Add MTSCRA.h and libMTSCRA.a to your project
@@ -65,9 +65,7 @@ NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
 
 ```
 
-
-
-3 step process to integrate to Mercury Web Services.
+#3 step process to integrate to Mercury Web Services.
 
 ##Step 1: Build Request with Key Value Pairs
   
