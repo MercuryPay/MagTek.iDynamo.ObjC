@@ -14,7 +14,6 @@
 
 @property (nonatomic, weak) IBOutlet UIImageView *ccSwipe;
     @property (strong, nonatomic) MTSCRA *magTek;
-//    @property (strong, nonatomic) uniMag *uniMag;
 @end
 
 @implementation SwipeViewController
