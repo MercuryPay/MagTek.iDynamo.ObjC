@@ -1,6 +1,71 @@
 MagTek.iDynamo.ObjC
 ===================
-XCode iOS application processing transactions to our web services platform.
+XCode iOS application capturing encrypted credit card swipe from MagTek peripheral and processing transactions to our web services platform.
+
+Steps to capture encrypted card data from MagTek encrypted mobile swipers
+
+##Step 1: Add MagTek library
+Add MTSCRA.h and libMTSCRA.a to your project
+
+##Step 2: Modify plist file
+Add key "Supported external accessory protocols"
+Under above key add new item value of "com.magtek.idynamo"
+
+##Step 3: Initilize a new MTSCRA instance
+
+```
+self.magTek = [[MTSCRA alloc] init];
+[self.magTek listenForEvents:(TRANS_EVENT_OK|TRANS_EVENT_START|TRANS_EVENT_ERROR)];
+[self.magTek setDeviceProtocolString:(@"com.magtek.idynamo")];
+```
+
+##Step 4: Register to MagTek notification center events
+
+```
+NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
+[nc addObserver:self selector:@selector(trackDataReady:) name:@"trackDataReadyNotification" object:nil];
+[nc addObserver:self selector:@selector(devConnStatusChange) name:@"devConnectionNotification" object:nil];
+```
+
+##Step 5: On trackDataReadyNotification event store the Track2 and KSN
+
+```
+- (void)trackDataReady:(NSNotification *)notification
+{
+    NSNumber *status = [[notification userInfo] valueForKey:@"status"];
+    
+    [self performSelectorOnMainThread:@selector(onDataEvent:)
+                           withObject:status
+                        waitUntilDone:NO];
+}
+
+- (void)onDataEvent:(id)status
+{
+    switch ([status intValue]) {
+        case TRANS_STATUS_OK:
+            NSLog(@"TRANS_STATUS_OK");
+            self.encryptedSwipeData = [[EncryptedSwipeData alloc] init];
+            self.encryptedSwipeData.track1Masked = self.magTek.getTrack1Masked;
+            self.encryptedSwipeData.track2Masked = self.magTek.getTrack2Masked;
+            self.encryptedSwipeData.track1Encrypted = self.magTek.getTrack1;
+            self.encryptedSwipeData.track2Encrypted = self.magTek.getTrack2;
+            self.encryptedSwipeData.ksn = self.magTek.getKSN;
+            
+            AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+            appDelegate.encryptedSwipeData = self.encryptedSwipeData;
+            
+            break;
+        case TRANS_STATUS_ERROR:
+            NSLog(@"TRANS_STATUS_ERROR");
+            break;
+        default:
+            break;
+    }
+}
+
+```
+
+
 
 3 step process to integrate to Mercury Web Services.
 
@@ -9,6 +74,8 @@ XCode iOS application processing transactions to our web services platform.
 Create a NSMutableDictionary and add all the Key Value Pairs.
   
 ```
+    AppDelegate *ad = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+    
     NSMutableDictionary *dictionaryReq = [NSMutableDictionary new];
     [dictionaryReq setObject:@"118725340908147" forKey:@"MerchantID"];
     [dictionaryReq setObject:@"Credit" forKey:@"TranType"];
@@ -18,9 +85,11 @@ Create a NSMutableDictionary and add all the Key Value Pairs.
     [dictionaryReq setObject:@"MercuryHelper 1.0.1" forKey:@"Memo"];
     [dictionaryReq setObject:@"Allow" forKey:@"PartialAuth"];
     [dictionaryReq setObject:@"MagneSafe" forKey:@"EncryptedFormat"];
-    [dictionaryReq setObject:@"Keyed" forKey:@"AccountSource"];
-    [dictionaryReq setObject:@"C756513CF498BBBF462FEDBFBF732DD8434ACB2B28325D0C7323204F639AC68FFD2769B49020E0CD" forKey:@"EncryptedBlock"];
-    [dictionaryReq setObject:@"9500030000040C20001C" forKey:@"EncryptedKey"];
+    [dictionaryReq setObject:@"Swiped" forKey:@"AccountSource"];
+    
+    [dictionaryReq setObject:ad.encryptedSwipeData.track2Encrypted forKey:@"EncryptedBlock"];
+    [dictionaryReq setObject:ad.encryptedSwipeData.ksn forKey:@"EncryptedKey"];
+    
     [dictionaryReq setObject:@"OneTime" forKey:@"Frequency"];
     [dictionaryReq setObject:@"RecordNumberRequested" forKey:@"RecordNo"];
     [dictionaryReq setObject:@"1.01" forKey:@"Purchase"];
