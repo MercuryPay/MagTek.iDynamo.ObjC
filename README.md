@@ -1,5 +1,4 @@
 [![githalytics.com alpha](https://cruel-carlota.pagodabox.com/c9964cae9f5c3bf8f8488cd04b1a1183 "githalytics.com")](http://githalytics.com/MercuryPay/MagTek.iDynamo.ObjC)
-
 MagTek.iDynamo.ObjC
 ===================
 XCode iOS application capturing encrypted credit card swipe from MagTek peripheral and processing transactions to our web services platform.
