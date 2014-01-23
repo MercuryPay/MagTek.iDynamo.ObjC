@@ -15,7 +15,7 @@ Under above key add new item value of "com.magtek.idynamo"
 
 ##Step 3: Initilize a new MTSCRA instance
 
-```
+```Objective-C
 self.magTek = [[MTSCRA alloc] init];
 [self.magTek listenForEvents:(TRANS_EVENT_OK|TRANS_EVENT_START|TRANS_EVENT_ERROR)];
 [self.magTek setDeviceProtocolString:(@"com.magtek.idynamo")];
@@ -23,7 +23,7 @@ self.magTek = [[MTSCRA alloc] init];
 
 ##Step 4: Register to MagTek notification center events
 
-```
+```Objective-C
 NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
 [nc addObserver:self selector:@selector(trackDataReady:) name:@"trackDataReadyNotification" object:nil];
 [nc addObserver:self selector:@selector(devConnStatusChange) name:@"devConnectionNotification" object:nil];
@@ -31,7 +31,7 @@ NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
 
 ##Step 5: On trackDataReadyNotification event store the Track2 and KSN
 
-```
+```Objective-C
 - (void)trackDataReady:(NSNotification *)notification
 {
     NSNumber *status = [[notification userInfo] valueForKey:@"status"];
@@ -73,7 +73,7 @@ NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
   
 Create a NSMutableDictionary and add all the Key Value Pairs.
   
-```
+```Objective-C
     AppDelegate *ad = (AppDelegate*)[[UIApplication sharedApplication] delegate];
     
     NSMutableDictionary *dictionaryReq = [NSMutableDictionary new];
@@ -106,7 +106,7 @@ Create a NSMutableDictionary and add all the Key Value Pairs.
 
 Create MercuryHelper object and call the transctionFromDictionary method with the NSMutalbeDictionary and merchant's password.
 
-```
+```Objective-C
     MercuryHelper *mgh = [MercuryHelper new];
     mgh.delegate = self;
     [mgh transctionFromDictionary:dictionaryReq andPassword:@"xyz"];
@@ -118,7 +118,7 @@ Parse the Response using in the transactionDidFinish delegate.
 
 Approved transactions will have a CmdStatus equal to "Approved".
 
-```
+```Objective-C
 -(void) transactionDidFinish:(NSDictionary *)result {
     
     if ([result objectForKey:@"CmdStatus"]
