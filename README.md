@@ -78,6 +78,7 @@ Create a NSMutableDictionary and add all the Key Value Pairs.
     
     NSMutableDictionary *dictionaryReq = [NSMutableDictionary new];
     [dictionaryReq setObject:@"118725340908147" forKey:@"MerchantID"];
+    [dictionaryReq setObject:@"018847445761734" forKey:@"MerchantID"];
     [dictionaryReq setObject:@"Credit" forKey:@"TranType"];
     [dictionaryReq setObject:@"Sale" forKey:@"TranCode"];
     [dictionaryReq setObject:@"12345" forKey:@"InvoiceNo"];
