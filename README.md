@@ -143,4 +143,4 @@ This software and all specifications and documentation contained herein or provi
 
 [![githalytics.com alpha](https://cruel-carlota.pagodabox.com/c9964cae9f5c3bf8f8488cd04b1a1183 "githalytics.com")](http://githalytics.com/MercuryPay/MagTek.iDynamo.ObjC)
 
-[![Analytics](https://ga-beacon.appspot.com/UA-1785046-10/REST.ObjC/readme?pixel)](https://github.com/MercuryPay)
+[![Analytics](https://ga-beacon.appspot.com/UA-1785046-10/MagTek.iDynamo.ObjC/readme?pixel)](https://github.com/MercuryPay)
