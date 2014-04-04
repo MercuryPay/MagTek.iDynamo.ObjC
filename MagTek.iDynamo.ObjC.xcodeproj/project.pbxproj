@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07FAF5EB18EF02AA0074CC47 /* libMultiArchMTSCRA.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FAF5EA18EF02AA0074CC47 /* libMultiArchMTSCRA.a */; };
 		45C80715181DABDF004DCD7D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45C80714181DABDF004DCD7D /* QuartzCore.framework */; };
 		C2269E56180EF15D00A5ECE5 /* ReceiptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2269E4F180EF15D00A5ECE5 /* ReceiptViewController.m */; };
 		C2269E57180EF15D00A5ECE5 /* SwipeReturnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2269E51180EF15D00A5ECE5 /* SwipeReturnViewController.m */; };
@@ -27,7 +28,6 @@
 		C2EC5DC7180C485300883E97 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2EC5DC6180C485300883E97 /* MediaPlayer.framework */; };
 		C2EC5DC9180C486300883E97 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2EC5DC8180C486300883E97 /* AudioToolbox.framework */; };
 		C2EC5DCB180C487700883E97 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2EC5DCA180C487700883E97 /* ExternalAccessory.framework */; };
-		C2EC5DCF180C4BBB00883E97 /* libMTSCRA.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2EC5DCE180C4BBB00883E97 /* libMTSCRA.a */; };
 		C2EC5DD1180C4C2500883E97 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C2EC5DD0180C4C2500883E97 /* libstdc++.dylib */; };
 		C2F0D1BF180DE99C00F7AF44 /* iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2F0D1BE180DE99C00F7AF44 /* iPad.storyboard */; };
 		C2F0D213180EEE9400F7AF44 /* button_step1.png in Resources */ = {isa = PBXBuildFile; fileRef = C2F0D1C4180EEE9300F7AF44 /* button_step1.png */; };
@@ -73,6 +73,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07FAF5EA18EF02AA0074CC47 /* libMultiArchMTSCRA.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMultiArchMTSCRA.a; sourceTree = "<group>"; };
 		45C80714181DABDF004DCD7D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		C2269E4D180EF14E00A5ECE5 /* SwipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SwipeViewController.h; path = MagTek.iDynamo.ObjC/Classes/SwipeViewController.h; sourceTree = SOURCE_ROOT; };
 		C2269E4E180EF15D00A5ECE5 /* ReceiptViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReceiptViewController.h; path = MagTek.iDynamo.ObjC/Classes/ReceiptViewController.h; sourceTree = SOURCE_ROOT; };
@@ -105,7 +106,6 @@
 		C2EC5DC6180C485300883E97 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		C2EC5DC8180C486300883E97 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		C2EC5DCA180C487700883E97 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
-		C2EC5DCE180C4BBB00883E97 /* libMTSCRA.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMTSCRA.a; sourceTree = "<group>"; };
 		C2EC5DD0180C4C2500883E97 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		C2F0D1BE180DE99C00F7AF44 /* iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPad.storyboard; sourceTree = "<group>"; };
 		C2F0D1C4180EEE9300F7AF44 /* button_step1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_step1.png; sourceTree = "<group>"; };
@@ -155,7 +155,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2EC5DCF180C4BBB00883E97 /* libMTSCRA.a in Frameworks */,
+				07FAF5EB18EF02AA0074CC47 /* libMultiArchMTSCRA.a in Frameworks */,
 				C2EC5DD1180C4C2500883E97 /* libstdc++.dylib in Frameworks */,
 				C2EC5DCB180C487700883E97 /* ExternalAccessory.framework in Frameworks */,
 				C2EC5DC9180C486300883E97 /* AudioToolbox.framework in Frameworks */,
@@ -230,8 +230,8 @@
 		C2EC5DC2180C424600883E97 /* MagTek-SDK */ = {
 			isa = PBXGroup;
 			children = (
+				07FAF5EA18EF02AA0074CC47 /* libMultiArchMTSCRA.a */,
 				C2EC5DC1180C420E00883E97 /* MTSCRA.h */,
-				C2EC5DCE180C4BBB00883E97 /* libMTSCRA.a */,
 			);
 			path = "MagTek-SDK";
 			sourceTree = "<group>";
@@ -504,6 +504,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/MagTek.iDynamo.ObjC\"",
 					"\"$(SRCROOT)/MagTek.iDynamo.ObjC/MagTek-SDK\"",
+					"$(PROJECT_DIR)/MagTek.iDynamo.ObjC/MagTek-SDK",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -520,6 +521,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/MagTek.iDynamo.ObjC\"",
 					"\"$(SRCROOT)/MagTek.iDynamo.ObjC/MagTek-SDK\"",
+					"$(PROJECT_DIR)/MagTek.iDynamo.ObjC/MagTek-SDK",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>6D988033-8E7A-4915-BD81-87FE22814392</string>
+	<string>D97BC0A0-AEE1-46BC-840D-13B57489CC37</string>
 	<key>IDESourceControlProjectName</key>
 	<string>MagTek.iDynamo.ObjC</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>F74E1B06-D574-4730-84B5-1E22F8D6083E</key>
-		<string>https://github.com/MercuryPay/MagTek.iDynamo.ObjC.git</string>
+		<key>FF4675F4-A0D7-43A2-A7CE-D12886D41FA0</key>
+		<string>https://github.com/estobbart/MagTek.iDynamo.ObjC.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>MagTek.iDynamo.ObjC.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>F74E1B06-D574-4730-84B5-1E22F8D6083E</key>
+		<key>FF4675F4-A0D7-43A2-A7CE-D12886D41FA0</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/MercuryPay/MagTek.iDynamo.ObjC.git</string>
+	<string>https://github.com/estobbart/MagTek.iDynamo.ObjC.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>F74E1B06-D574-4730-84B5-1E22F8D6083E</string>
+	<string>FF4675F4-A0D7-43A2-A7CE-D12886D41FA0</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>F74E1B06-D574-4730-84B5-1E22F8D6083E</string>
+			<string>FF4675F4-A0D7-43A2-A7CE-D12886D41FA0</string>
 			<key>IDESourceControlWCCName</key>
-			<string>MagTek.iDynamo</string>
+			<string>MagTek.iDynamo.ObjC</string>
 		</dict>
 	</array>
 </dict>
