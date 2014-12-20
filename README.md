@@ -2,7 +2,9 @@ MagTek.iDynamo.ObjC
 ===================
 XCode iOS application capturing encrypted credit card swipe from MagTek peripheral and processing transactions to our web services platform.
 
-> In order to Build and Run you **must** connect an iOS device to dubug. Build will fail with iOS Simulator 
+Built with Xcode Version 6.1.1
+
+Latest MagTek libMTSCRA.a added which provides for arm64 for both sdk and simulator (12/19/2014)
 
 #Steps to capture secure card data from MagTek encrypted mobile swipers
 
