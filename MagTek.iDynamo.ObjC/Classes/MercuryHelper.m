@@ -195,10 +195,14 @@ NSString            *_noCaps;
     if (_numberOfPasses == 1)
     {
         NSData *data = [_TransactionResult dataUsingEncoding:NSUTF8StringEncoding];
-        _xmlParser = [[NSXMLParser alloc] initWithData: data];
-        [_xmlParser setDelegate: self];
-        [_xmlParser setShouldResolveExternalEntities: YES];
-        [_xmlParser parse];
+        
+        dispatch_queue_t reentrantAvoidanceQueue = dispatch_queue_create("reentrantAvoidanceQueue", DISPATCH_QUEUE_SERIAL);
+        dispatch_async(reentrantAvoidanceQueue, ^{
+            _xmlParser = [[NSXMLParser alloc] initWithData:data];
+            [_xmlParser setDelegate:self];
+            [_xmlParser parse];
+        });
+        dispatch_sync(reentrantAvoidanceQueue, ^{ });
     }
     else
     {

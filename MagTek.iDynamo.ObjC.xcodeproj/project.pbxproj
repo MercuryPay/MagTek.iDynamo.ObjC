@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		45C80715181DABDF004DCD7D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45C80714181DABDF004DCD7D /* QuartzCore.framework */; };
+		5BDE8CE21A44F22C002B24F7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BDE8CE11A44F22C002B24F7 /* AVFoundation.framework */; };
+		5BDE8CE91A44FC14002B24F7 /* libMTSCRA.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BDE8CE81A44FC14002B24F7 /* libMTSCRA.a */; };
+		5BDE8CEB1A44FC22002B24F7 /* libMTSCRA.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BDE8CEA1A44FC22002B24F7 /* libMTSCRA.a */; };
 		C2269E56180EF15D00A5ECE5 /* ReceiptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2269E4F180EF15D00A5ECE5 /* ReceiptViewController.m */; };
 		C2269E57180EF15D00A5ECE5 /* SwipeReturnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2269E51180EF15D00A5ECE5 /* SwipeReturnViewController.m */; };
 		C2269E58180EF15D00A5ECE5 /* SwipeInitResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2269E53180EF15D00A5ECE5 /* SwipeInitResultsViewController.m */; };
@@ -27,7 +30,6 @@
 		C2EC5DC7180C485300883E97 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2EC5DC6180C485300883E97 /* MediaPlayer.framework */; };
 		C2EC5DC9180C486300883E97 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2EC5DC8180C486300883E97 /* AudioToolbox.framework */; };
 		C2EC5DCB180C487700883E97 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2EC5DCA180C487700883E97 /* ExternalAccessory.framework */; };
-		C2EC5DCF180C4BBB00883E97 /* libMTSCRA.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2EC5DCE180C4BBB00883E97 /* libMTSCRA.a */; };
 		C2EC5DD1180C4C2500883E97 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C2EC5DD0180C4C2500883E97 /* libstdc++.dylib */; };
 		C2F0D1BF180DE99C00F7AF44 /* iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2F0D1BE180DE99C00F7AF44 /* iPad.storyboard */; };
 		C2F0D213180EEE9400F7AF44 /* button_step1.png in Resources */ = {isa = PBXBuildFile; fileRef = C2F0D1C4180EEE9300F7AF44 /* button_step1.png */; };
@@ -74,6 +76,10 @@
 
 /* Begin PBXFileReference section */
 		45C80714181DABDF004DCD7D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5BDE8CE11A44F22C002B24F7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		5BDE8CE51A44FBBE002B24F7 /* MTSCRA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MTSCRA.h; path = Lib/MTSCRA.h; sourceTree = "<group>"; };
+		5BDE8CE81A44FC14002B24F7 /* libMTSCRA.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMTSCRA.a; path = "Lib/Release-iphoneos/libMTSCRA.a"; sourceTree = "<group>"; };
+		5BDE8CEA1A44FC22002B24F7 /* libMTSCRA.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMTSCRA.a; path = "Lib/Release-iphonesimulator/libMTSCRA.a"; sourceTree = "<group>"; };
 		C2269E4D180EF14E00A5ECE5 /* SwipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SwipeViewController.h; path = MagTek.iDynamo.ObjC/Classes/SwipeViewController.h; sourceTree = SOURCE_ROOT; };
 		C2269E4E180EF15D00A5ECE5 /* ReceiptViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReceiptViewController.h; path = MagTek.iDynamo.ObjC/Classes/ReceiptViewController.h; sourceTree = SOURCE_ROOT; };
 		C2269E4F180EF15D00A5ECE5 /* ReceiptViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReceiptViewController.m; path = MagTek.iDynamo.ObjC/Classes/ReceiptViewController.m; sourceTree = SOURCE_ROOT; };
@@ -101,11 +107,9 @@
 		C2EC5DB9180C418000883E97 /* MercuryHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MercuryHelper.m; sourceTree = "<group>"; };
 		C2EC5DBC180C41B800883E97 /* EncryptedSwipeData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EncryptedSwipeData.h; sourceTree = "<group>"; };
 		C2EC5DBD180C41B800883E97 /* EncryptedSwipeData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EncryptedSwipeData.m; sourceTree = "<group>"; };
-		C2EC5DC1180C420E00883E97 /* MTSCRA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MTSCRA.h; path = ../Classes/MTSCRA.h; sourceTree = "<group>"; };
 		C2EC5DC6180C485300883E97 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		C2EC5DC8180C486300883E97 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		C2EC5DCA180C487700883E97 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
-		C2EC5DCE180C4BBB00883E97 /* libMTSCRA.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMTSCRA.a; sourceTree = "<group>"; };
 		C2EC5DD0180C4C2500883E97 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		C2F0D1BE180DE99C00F7AF44 /* iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPad.storyboard; sourceTree = "<group>"; };
 		C2F0D1C4180EEE9300F7AF44 /* button_step1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_step1.png; sourceTree = "<group>"; };
@@ -155,13 +159,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2EC5DCF180C4BBB00883E97 /* libMTSCRA.a in Frameworks */,
+				5BDE8CE21A44F22C002B24F7 /* AVFoundation.framework in Frameworks */,
 				C2EC5DD1180C4C2500883E97 /* libstdc++.dylib in Frameworks */,
 				C2EC5DCB180C487700883E97 /* ExternalAccessory.framework in Frameworks */,
+				5BDE8CEB1A44FC22002B24F7 /* libMTSCRA.a in Frameworks */,
 				C2EC5DC9180C486300883E97 /* AudioToolbox.framework in Frameworks */,
 				C2EC5DC7180C485300883E97 /* MediaPlayer.framework in Frameworks */,
 				C2EC5D9A180C415300883E97 /* UIKit.framework in Frameworks */,
 				C2EC5D9C180C415300883E97 /* Foundation.framework in Frameworks */,
+				5BDE8CE91A44FC14002B24F7 /* libMTSCRA.a in Frameworks */,
 				C2EC5D9E180C415300883E97 /* CoreGraphics.framework in Frameworks */,
 				45C80715181DABDF004DCD7D /* QuartzCore.framework in Frameworks */,
 			);
@@ -170,6 +176,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5BDE8CE41A44FB7E002B24F7 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				5BDE8CE71A44FBF6002B24F7 /* Release-iphonesimulator */,
+				5BDE8CE61A44FBEB002B24F7 /* Release-iphoneOS */,
+				5BDE8CE51A44FBBE002B24F7 /* MTSCRA.h */,
+			);
+			name = Lib;
+			sourceTree = "<group>";
+		};
+		5BDE8CE61A44FBEB002B24F7 /* Release-iphoneOS */ = {
+			isa = PBXGroup;
+			children = (
+				5BDE8CE81A44FC14002B24F7 /* libMTSCRA.a */,
+			);
+			name = "Release-iphoneOS";
+			sourceTree = "<group>";
+		};
+		5BDE8CE71A44FBF6002B24F7 /* Release-iphonesimulator */ = {
+			isa = PBXGroup;
+			children = (
+				5BDE8CEA1A44FC22002B24F7 /* libMTSCRA.a */,
+			);
+			name = "Release-iphonesimulator";
+			sourceTree = "<group>";
+		};
 		C2EC5D8D180C415200883E97 = {
 			isa = PBXGroup;
 			children = (
@@ -190,6 +222,7 @@
 		C2EC5D98180C415300883E97 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5BDE8CE11A44F22C002B24F7 /* AVFoundation.framework */,
 				C2EC5DD0180C4C2500883E97 /* libstdc++.dylib */,
 				45C80714181DABDF004DCD7D /* QuartzCore.framework */,
 				C2EC5DCA180C487700883E97 /* ExternalAccessory.framework */,
@@ -205,7 +238,7 @@
 		C2EC5D9F180C415300883E97 /* MagTek.iDynamo.ObjC */ = {
 			isa = PBXGroup;
 			children = (
-				C2EC5DC2180C424600883E97 /* MagTek-SDK */,
+				5BDE8CE41A44FB7E002B24F7 /* Lib */,
 				C2EC5DC5180C459600883E97 /* Classes */,
 				C2EC5DA0180C415300883E97 /* Resources */,
 			);
@@ -225,15 +258,6 @@
 				C2EC5DAF180C415300883E97 /* Default-568h@2x.png */,
 			);
 			name = Resources;
-			sourceTree = "<group>";
-		};
-		C2EC5DC2180C424600883E97 /* MagTek-SDK */ = {
-			isa = PBXGroup;
-			children = (
-				C2EC5DC1180C420E00883E97 /* MTSCRA.h */,
-				C2EC5DCE180C4BBB00883E97 /* libMTSCRA.a */,
-			);
-			path = "MagTek-SDK";
 			sourceTree = "<group>";
 		};
 		C2EC5DC5180C459600883E97 /* Classes */ = {
@@ -500,10 +524,14 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MagTek.iDynamo.ObjC/MagTek.iDynamo.ObjC-Prefix.pch";
 				INFOPLIST_FILE = "MagTek.iDynamo.ObjC/MagTek.iDynamo.ObjC-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
+				LIBRARY_SEARCH_PATHS = "";
+				"LIBRARY_SEARCH_PATHS[sdk=iphoneos*]" = (
 					"$(inherited)",
-					"\"$(SRCROOT)/MagTek.iDynamo.ObjC\"",
-					"\"$(SRCROOT)/MagTek.iDynamo.ObjC/MagTek-SDK\"",
+					"$(PROJECT_DIR)/MagTek.iDynamo.ObjC/Lib/Release-iphoneos",
+				);
+				"LIBRARY_SEARCH_PATHS[sdk=iphonesimulator*]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MagTek.iDynamo.ObjC/Lib/Release-iphonesimulator",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -516,10 +544,14 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MagTek.iDynamo.ObjC/MagTek.iDynamo.ObjC-Prefix.pch";
 				INFOPLIST_FILE = "MagTek.iDynamo.ObjC/MagTek.iDynamo.ObjC-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
+				LIBRARY_SEARCH_PATHS = "";
+				"LIBRARY_SEARCH_PATHS[sdk=iphoneos*]" = (
 					"$(inherited)",
-					"\"$(SRCROOT)/MagTek.iDynamo.ObjC\"",
-					"\"$(SRCROOT)/MagTek.iDynamo.ObjC/MagTek-SDK\"",
+					"$(PROJECT_DIR)/MagTek.iDynamo.ObjC/Lib/Release-iphoneos",
+				);
+				"LIBRARY_SEARCH_PATHS[sdk=iphonesimulator*]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MagTek.iDynamo.ObjC/Lib/Release-iphonesimulator",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
