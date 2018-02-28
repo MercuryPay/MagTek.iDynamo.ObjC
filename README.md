@@ -6,16 +6,16 @@ Built with Xcode Version 6.1.1
 
 Latest MagTek libMTSCRA.a added which provides for arm64 for both sdk and simulator (12/19/2014)
 
-#Steps to capture secure card data from MagTek encrypted mobile swipers
+# Steps to capture secure card data from MagTek encrypted mobile swipers
 
-##Step 1: Add MagTek library
+## Step 1: Add MagTek library
 Add MTSCRA.h and libMTSCRA.a to your project
 
-##Step 2: Modify plist file
+## Step 2: Modify plist file
 Add key "Supported external accessory protocols"
 Under above key add new item value of "com.magtek.idynamo"
 
-##Step 3: Initilize a new MTSCRA instance
+## Step 3: Initilize a new MTSCRA instance
 
 ```Objective-C
 self.magTek = [[MTSCRA alloc] init];
@@ -23,7 +23,7 @@ self.magTek = [[MTSCRA alloc] init];
 [self.magTek setDeviceProtocolString:(@"com.magtek.idynamo")];
 ```
 
-##Step 4: Register to MagTek notification center events
+## Step 4: Register to MagTek notification center events
 
 ```Objective-C
 NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
@@ -31,7 +31,7 @@ NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
 [nc addObserver:self selector:@selector(devConnStatusChange) name:@"devConnectionNotification" object:nil];
 ```
 
-##Step 5: On trackDataReadyNotification event store the Track2 and KSN
+## Step 5: On trackDataReadyNotification event store the Track2 and KSN
 
 ```Objective-C
 - (void)trackDataReady:(NSNotification *)notification
@@ -69,9 +69,9 @@ NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
 
 ```
 
-#3 step process to integrate to Mercury Web Services.
+# 3 step process to integrate to Mercury Web Services.
 
-##Step 1: Build Request with Key Value Pairs
+## Step 1: Build Request with Key Value Pairs
   
 Create a NSMutableDictionary and add all the Key Value Pairs.
   
@@ -105,7 +105,7 @@ Create a NSMutableDictionary and add all the Key Value Pairs.
     [dictionaryReq setObject:@"123" forKey:@"CVV"];
 ```
   
-##Step 2: Process the Transaction
+## Step 2: Process the Transaction
 
 Create MercuryHelper object and call the transctionFromDictionary method with the NSMutalbeDictionary and merchant's password.
 
@@ -115,7 +115,7 @@ Create MercuryHelper object and call the transctionFromDictionary method with th
     [mgh transctionFromDictionary:dictionaryReq andPassword:@"xyz"];
 ```
 
-##Step 3: Parse the Response
+## Step 3: Parse the Response
 
 Parse the Response using in the transactionDidFinish delegate.
 
@@ -138,7 +138,7 @@ Approved transactions will have a CmdStatus equal to "Approved".
 }
 ```
 
-###©2014 Mercury Payment Systems, LLC - all rights reserved.
+### ©2014 Mercury Payment Systems, LLC - all rights reserved.
 
 Disclaimer:
 This software and all specifications and documentation contained herein or provided to you hereunder (the "Software") are provided free of charge strictly on an "AS IS" basis. No representations or warranties are expressed or implied, including, but not limited to, warranties of suitability, quality, merchantability, or fitness for a particular purpose (irrespective of any course of dealing, custom or usage of trade), and all such warranties are expressly and specifically disclaimed. Mercury Payment Systems shall have no liability or responsibility to you nor any other person or entity with respect to any liability, loss, or damage, including lost profits whether foreseeable or not, or other obligation for any cause whatsoever, caused or alleged to be caused directly or indirectly by the Software. Use of the Software signifies agreement with this disclaimer notice.
