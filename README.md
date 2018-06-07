@@ -1,5 +1,8 @@
 MagTek.iDynamo.ObjC
 ===================
+
+<a href="https://developer.vantiv.com/?utm_campaign=githubcta&utm_medium=hyperlink&utm_source=github&utm_content=gotquestions">Got questions? Connect with our experts on Vantiv ONE.</a>
+
 XCode iOS application capturing encrypted credit card swipe from MagTek peripheral and processing transactions to our web services platform.
 
 Built with Xcode Version 6.1.1
